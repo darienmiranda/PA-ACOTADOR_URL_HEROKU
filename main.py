@@ -8,9 +8,13 @@ app = Flask(__name__)
 
 db = mysql.connect(
     host="academia.c1mebdhdxytu.us-east-1.rds.amazonaws.com",
-    user="p1",
+    user="p5",
     password="ALrUBIaLYcHR",
-    database="p1"
+    database="p5"
+    
+    
+    
+    
 )
 cursor = db.cursor()
 @app.route("/", methods=["GET", "POST"])
@@ -38,4 +42,4 @@ def redirection(shortened):
     cursor.execute(sql,{'short_url':shortened})
     result = cursor.fetchone()
     return redirect(result[0])
-app.run(debug=True)
+#app.run(debug=True)

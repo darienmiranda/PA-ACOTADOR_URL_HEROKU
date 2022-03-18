@@ -12,12 +12,6 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
-
--- Volcando estructura de base de datos para dictionary
-CREATE DATABASE IF NOT EXISTS `dictionary` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `dictionary`;
-
--- Volcando estructura para tabla dictionary.datos
 CREATE TABLE IF NOT EXISTS `datos` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `short_url` varchar(50) DEFAULT NULL,
