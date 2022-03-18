@@ -36,7 +36,7 @@ def createShortener():
     
     return render_template("shorteners/create.html", url=url,short=short)
 
-@app.get("/short/<shortened>")
+@app.get("/<shortened>")
 def redirection(shortened):
     sql = "SELECT large_url FROM datos WHERE short_url = %(short_url)s"
     cursor.execute(sql,{'short_url':shortened})
